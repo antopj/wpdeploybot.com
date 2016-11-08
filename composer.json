@@ -20,11 +20,11 @@
     },
 
      "extra": {
-        "wordpress-install-dir": "wp",
+        "htdocs/wordpress-install-dir": "wp",
 	
 	"installer-paths": {
-            "wp-content/plugins": ["wpackagist-plugin"],
-            "wp-content/theme": ["wpackagist-theme"]
+            "htdocs/wp-content/plugins": ["wpackagist-plugin"],
+            "htdocs/wp-content/theme": ["wpackagist-theme"]
         }
     }
 

@@ -1,0 +1,31 @@
+{
+    "name": "wpdeploybot.com/wordpress-composer",
+    "description": "wpdeploybot.com WordPress Setup, powered by composer",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+   ],
+
+     "require": {
+        "johnpbloch/wordpress": "4.4.2",
+       	"wpackagist-theme/color": "^0.9.8.4", 
+        "wpackagist-plugin/cmb2": "^2.0",
+        "wpackagist-plugin/columns": "^0.7",
+        "wpackagist-plugin/wordpress-seo": "^2.2",
+        "wpackagist-plugin/woocommerce": "2.6.4",
+        "wpackagist-plugin/sucuri-scanner": "1.8.3"
+    },
+
+     "extra": {
+        "wordpress-install-dir": "wp",
+	
+	"installer-paths": {
+            "wp-content/plugins": ["wpackagist-plugin"],
+            "wp-content/theme": ["wpackagist-theme"]
+        }
+    }
+
+}
